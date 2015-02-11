@@ -1,4 +1,4 @@
-# storm-bolt-of-death
+# storm-bolt-of-death [![Build Status](https://travis-ci.org/verisign/storm-bolt-of-death.png?branch=develop)](https://travis-ci.org/verisign/storm-bolt-of-death)
 
 An [Apache Storm](http://storm.apache.org/) topology that will, by design, trigger failures at run-time.
 
