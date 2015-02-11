@@ -1,0 +1,12 @@
+env:
+  global:
+    - STORM_TEST_TIMEOUT_MS=13000
+script:
+  - "./sbt compile"
+language: scala
+scala:
+   - 2.10.4
+
+jdk:
+  - openjdk7
+  - oraclejdk7
