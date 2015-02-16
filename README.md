@@ -95,6 +95,9 @@ The following command submits the topology to a remote, "real" Storm cluster.  T
 
     $ storm jar storm-bolt-of-death-assembly-0.1.0.jar com.verisign.storm.tools.sbod.BoltOfDeathTopology
 
+The default parallelism of this topology will consume 10 slots in your Storm cluster (2 executors for each spout/bolt
+plus 2 acker threads).
+
 
 <a name="kill-switch"></a>
 
