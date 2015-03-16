@@ -52,7 +52,7 @@ echo "`basename $0` -- displays key metrics of $TOPOLOGY_NAME"
 echo $SEP
 echo "Topology: $BOD_TOPOLOGY"
 echo $sep
-curl -s $API/topology/summary | jq '.topologies |.[] | select(.id | contains("bolt-of-death-topology") )'
+curl -s $API/topology/summary | jq ".topologies |.[] | select(.id | contains(\"$TOPOLOGY_NAME\") )"
 
 # Print topology map
 echo $sep
