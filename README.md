@@ -31,6 +31,10 @@ Table of Contents
 
 <a name="how-it-works"></a>
 
+# What is the bolt-of-death?
+
+Basically, a RuntimeException in one worker causes it to crash (fail-fast behavior). Other workers who cannot connect to the crashed worker get a RuntimeException and crash themselves. The whole thing cascades in a fiery ball of death for the entire cluster.
+
 # How this topology works
 
 The bolt-of-death topology is a simple "V" -shaped topology with two processing "branches" A and B:
